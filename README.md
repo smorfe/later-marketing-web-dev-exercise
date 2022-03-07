@@ -7,7 +7,8 @@
 1.  **On local**
 
     Clone the repo:
-    ```https://github.com/smorfe/later-marketing-web-dev-exercise.git
+    ```shell
+    https://github.com/smorfe/later-marketing-web-dev-exercise.git
     ```
 
     Navigate into your new site’s directory and start it up.
@@ -18,7 +19,7 @@
 
 2.  **Online**
 
-    You can also visit: 
-
-
-
+    You can also visit:
+    ```shell
+    https://later-web-dev-exercise.netlify.app
+    ```
