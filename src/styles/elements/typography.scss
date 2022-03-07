@@ -1,0 +1,50 @@
+// Headings
+
+h1, .h1, h2, .h2, .h3, .h3, h4, .h4 {
+    // color: $headings-color;
+}
+
+h1, .h1 {
+    @include custom-rfs(44, 29);
+    font-family: $font-heading;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+h2, .h2, h3, .h3 {
+    font-family: $font-heading;
+    font-weight: 500;
+    line-height: 125%;
+}
+
+h2, .h2 {
+    @include custom-rfs(36, 28);
+}
+
+h3, .h3 {
+    @include custom-rfs(28, 24);
+}
+
+h4, .h4 {
+    @include custom-rfs(18, 16);
+    line-height: 130%;
+}
+
+h5, .h5 {
+    font-size: 16px;
+    line-height: 125%;
+}
+
+h6, .h6 {
+    font-size: 14px;
+    line-height: 130%;
+}
+
+.text-normal {
+    font-weight: 400;
+}
+
+.text-medium {
+    font-weight: 500;
+}
+

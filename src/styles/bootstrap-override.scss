@@ -1,0 +1,74 @@
+// Bootstrap Override Variables
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1230px,
+) !default;
+
+$font-family-base: 'Rubik', sans-serif !default;
+$font-heading: 'Poppins', sans-serif !default;
+$enable-responsive-font-sizes: true !default;
+$body-color: #323b43 !default;
+$headings-color: #323b43 !default;
+
+$btn-border-radius: 50px !default;
+$btn-padding-y: 12px !default;
+$btn-padding-x: 20px !default;
+$btn-font-size: 14px !default;
+$btn-line-height: 145% !default;
+$btn-font-weight: 500 !default;
+$btn-border-width: 2px !default;
+
+$secondary: #4140b0 !default;
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./elements/mixin.scss";
+@import "./elements/typography.scss";
+
+.btn-secondary {
+  @include button-variant($secondary, $white);
+  
+  > span {
+    transition: transform .3s ease-in-out;
+  }
+
+  @include hover() {
+    background-color: $white;
+    color: $secondary;
+    border-color: $white;
+
+    > span {
+      display: inline-block;
+      transform: translateX(0.188rem) translateZ(0px);
+    }
+  }
+
+  &:focus {
+    box-shadow: none !important;
+    background-color: $white;
+    color: $secondary;
+    border-color: $white;
+  }
+}
+
+.btn-outline-secondary {
+  > span {
+    transition: transform .3s ease-in-out;
+  }
+
+  &:hover {
+    > span {
+      display: inline-block;
+      transform: translateX(0.188rem) translateZ(0px);
+    }
+  }
+
+  &:focus {
+    box-shadow: none !important;
+    background-color: $secondary;
+    color: $white;
+  }
+}

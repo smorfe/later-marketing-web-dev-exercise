@@ -1,0 +1,30 @@
+/* Homepage Styling */
+
+main {
+    padding: 50px 0px;
+}
+
+.page-testimonials {
+    margin-top: 80px;
+    padding: 45px 0px;
+    background-color: #faf8f5;
+}
+
+.content {
+    p {
+        color: #7b8994;
+    }
+}
+
+.text-bold {
+    color: #ee85d3;
+}
+
+.testimonials-wrapper {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}

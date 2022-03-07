@@ -1,0 +1,38 @@
+@function fluid($max, $min, $max-width: 1440, $min-width: 320, $unit: "px") {
+   @return calc(
+      #{$min}#{$unit} + (#{$max} - #{$min}) * (100vw - #{$min-width}#{$unit}) / (#{$max-width} -
+            #{$min-width})
+   );
+}
+  
+@mixin fluid-prop(
+    $property,
+    $max,
+    $min: null,
+    $maxScreen: 1440,
+    $minScreen: 320,
+    $unit: "px"
+) {
+
+	@if ($min == null) {
+	$min: $max;
+	}
+  
+   #{$property}: fluid($max, $min, $maxScreen, $minScreen, $unit);
+  
+	@media screen and (min-width: #{$maxScreen}#{$unit}) {
+	#{$property}: #{$max}#{$unit};
+	}
+}
+
+
+// Custom function for responsive fonst size
+@mixin custom-rfs(
+  $max,
+  $min: null,
+  $maxScreen: 1440,
+  $minScreen: 320,
+  $unit: "px"
+) {
+  @include fluid-prop("font-size", $max, $min, $maxScreen, $minScreen, $unit);
+}
