@@ -11,6 +11,7 @@ module.exports = {
 				"spaceId": "fetlaavmpfux"
 			}
 		},
+		"gatsby-plugin-fontawesome-css",
 		"gatsby-plugin-sass",
 		"gatsby-plugin-image",
 		"gatsby-plugin-react-helmet",
