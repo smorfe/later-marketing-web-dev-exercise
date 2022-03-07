@@ -1,7 +1,8 @@
 module.exports = {
 	siteMetadata: {
 		title: `Later - Marketing Web Dev Exercise`,
-		siteUrl: `https://www.yourdomain.tld`
+		siteUrl: `https://later-web-dev-exercise.netlify.app`,
+		description: `This is for exercise purposes only.`
 	},
 	plugins: [
 		{

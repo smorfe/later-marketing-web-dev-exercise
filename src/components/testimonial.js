@@ -18,6 +18,7 @@ const TestimonialItem = ({ item }) => {
 
     const avatarImg = getImage(avatar);
 
+    const avatarAlt = avatar.description;
 
     return(
         <div className={`my-3 my-mb-0 ${testimonialCol}`}>
@@ -34,7 +35,7 @@ const TestimonialItem = ({ item }) => {
 
                 <div className={profile}>
                     <div className={image}>
-                        <GatsbyImage image={avatarImg} src={avatarImg} alt={fullName} />
+                        <GatsbyImage image={avatarImg} alt={avatarAlt} />
                     </div>
                     <div className="info">
                         {fullName && <p className="h6 mb-1">{fullName}</p>}
