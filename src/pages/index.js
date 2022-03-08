@@ -60,7 +60,7 @@ const IndexPage = ({ data }) => {
 								</div>
 								
 								{pageButtonLabel && pageButtonLink && 
-									<Button href={pageButtonLink} variant="outline-secondary" className="mt-2" type="button">
+									<Button href={pageButtonLink} variant="outline-secondary" className="mt-2">
 										{pageButtonLabel}
 										<span className="ml-2"><FontAwesomeIcon icon={faChevronRight} size="sm" /></span>
 									</Button>
